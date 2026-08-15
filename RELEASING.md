@@ -4,7 +4,7 @@
 
 ## 前置条件
 
-- 本机已登录 npm：`npm whoami` 应输出你的用户名（`caoyiwei`）。
+- 本机已登录 npm：`npm whoami` 应输出你的 npm 用户名（即发布者账号）。
 - `~/.npmrc` 的 registry 为官方源：`https://registry.npmjs.org/`（不要用镜像源发布）。
 - 发布需要 2FA：账号开启了双因素认证时，要么交互式输入验证码，要么用带 **Bypass 2FA** 的 granular token（本机已配置）。
 
