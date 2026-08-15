@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.7] - 2026-08-15
+
+### Fixed
+- Appearance selector cubes (浅色/深色/跟随系统): selected label now follows
+  the appearance (dark -> white on the dark cube, light -> dark on the pale
+  cube) instead of the photo accent.
+- Produced-files rows (产物) flip their label to the accent-readable pole so
+  file names stay legible on the pure-accent background.
+
 ## [0.1.6] - 2026-08-15
 
 ### Fixed
