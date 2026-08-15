@@ -3,6 +3,16 @@
 给 DeepSeek Harness (DSH) Web 界面换肤：4 套内置皮肤 + 自定义图片皮肤
 （图片作为整个界面的背景，配色自动跟随图片主色调）。
 
+## 效果预览
+
+自定义图片皮肤会将背景图、强调色与交互高亮统一为同一套色调。
+
+| 薄荷森林 | 深海守护者 | 赤月东方风 |
+| --- | --- | --- |
+| ![薄荷森林效果图](assets/screenshots/mint-forest-dsh.jpg) | ![深海守护者效果图](assets/screenshots/ocean-guardian-dsh.jpg) | ![赤月东方风效果图](assets/screenshots/crimson-moon-dsh.jpg) |
+
+三张原始壁纸位于 [`assets/wallpapers/`](assets/wallpapers/)，可以直接在“皮肤 → 自定义（选图）”中导入。
+
 ## 文件
 
 | 文件 | 作用 |
