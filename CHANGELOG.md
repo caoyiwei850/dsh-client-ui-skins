@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.6] - 2026-08-15
+
+### Fixed
+- HARNESS wordmark now stays readable in both appearances: its letters use
+  `label-primary-inverted` derived from the text colour (dark text -> light
+  mark, light text -> dark mark), matching DSH's native behaviour.
+- The "预览版 / preview" badge fills with the pure accent in translucent mode
+  so its fill matches its theme-coloured border.
+
 All notable changes to this project are documented in this file.
 
 ## [0.1.5] - 2026-08-15
