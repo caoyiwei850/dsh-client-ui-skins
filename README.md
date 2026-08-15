@@ -5,13 +5,13 @@
 
 ## 效果预览
 
-自定义图片皮肤会将背景图、强调色与交互高亮统一为同一套色调。
+自定义图片皮肤支持任意 PNG / JPG / WebP：导入自己的图片后，背景、强调色与交互高亮会自动跟随图片主色调。以下仅为界面效果示例。
 
-| 薄荷森林 | 深海守护者 | 赤月东方风 |
-| --- | --- | --- |
-| ![薄荷森林效果图](assets/screenshots/mint-forest-dsh.jpg) | ![深海守护者效果图](assets/screenshots/ocean-guardian-dsh.jpg) | ![赤月东方风效果图](assets/screenshots/crimson-moon-dsh.jpg) |
+![DSH 自定义皮肤效果示例 1](assets/screenshots/mint-forest-dsh.jpg)
 
-三张原始壁纸位于 [`assets/wallpapers/`](assets/wallpapers/)，可以直接在“皮肤 → 自定义（选图）”中导入。
+![DSH 自定义皮肤效果示例 2](assets/screenshots/ocean-guardian-dsh.jpg)
+
+![DSH 自定义皮肤效果示例 3](assets/screenshots/crimson-moon-dsh.jpg)
 
 ## 文件
 
