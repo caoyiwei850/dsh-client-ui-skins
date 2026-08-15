@@ -33,7 +33,7 @@ cd ~/.dsh/profiles/web && pnpm add -w ./dsh-client-ui-skins-0.1.5.tgz
 # 3. 重启 web
 launchctl kickstart -k gui/$(id -u)/com.deepseek.dsh.web
 ```
-
+其实你也可以直接扔给DeepSeek harness自己安装。
 ## 卸载
 ```bash
 bash uninstall-dsh-skins.sh
