@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.9] - 2026-08-16
+
+### Fixed
+- Toast 弹窗（及卡片上的移除按钮）文字在深色自定义皮肤下重新可读：
+  `--dsw-alias-button-contrast-fill` 原本派生自强调色（`readableOn(accent)`），
+  而它配对的文字 token `--dsw-alias-label-primary-inverted` 派生自文字色
+  （`readableOn(text)`，深色模式下恒为深色）。当用户用偏亮强调色的照片
+  （黄/青/绿，照片里很常见）做自定义皮肤时，两者同时落在深色极——文字被
+  背景吞掉，对比度 1.00，完全看不见。现在 contrast-fill 派生为
+  `label-primary-inverted` 的可读背景（相反极性），与 DSH 内置深/浅主题的
+  语义一致，全肤色/外观组合对比度 ≥ 15（AA 级）。
+
 ## [0.1.8] - 2026-08-15
 
 ### Fixed
