@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.8] - 2026-08-15
+
+### Fixed
+- Skin picker highlight now follows the clicked skin immediately (publish the
+  selection to the settings-row store after applying, instead of only on
+  theme/change).
+
 ## [0.1.7] - 2026-08-15
 
 ### Fixed
