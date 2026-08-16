@@ -2,15 +2,17 @@
 # install-dsh-skins.sh — one-shot installer for the dsh-client-ui-skins plugin.
 #
 # Usage:
-#   bash install-dsh-skins.sh [path/to/dsh-client-ui-skins-0.1.5.tgz]
+#   bash install-dsh-skins.sh [path/to/dsh-client-ui-skins-<ver>.tgz]
 #
-# Defaults to a tarball next to this script. Detects the active DSH web
-# profile, installs the plugin, registers the cordis entry, and restarts the
-# web service.
+# Defaults to the tarball next to this script whose version matches the
+# installed package.json. Detects the active DSH web profile, installs the
+# plugin, registers the cordis entry, and restarts the web service.
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-TGZ="${1:-$HERE/dsh-client-ui-skins-0.1.5.tgz}"
+# resolve the current version from package.json so the default never goes stale
+VER="$(node -p "require('$HERE/package.json').version" 2>/dev/null || true)"
+TGZ="${1:-$HERE/dsh-client-ui-skins-${VER}.tgz}"
 
 say()  { printf '\033[32m✓ %s\033[0m\n' "$*"; }
 warn() { printf '\033[33m! %s\033[0m\n' "$*"; }

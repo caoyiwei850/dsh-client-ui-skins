@@ -28,7 +28,7 @@ bash install-dsh-skins.sh
 
 ```bash
 # 1. install the package
-cd ~/.dsh/profiles/web && pnpm add -w <path-to>/dsh-client-ui-skins-0.1.8.tgz
+cd ~/.dsh/profiles/web && pnpm add -w <path-to>/dsh-client-ui-skins-0.1.9.tgz
 
 # 2. register (append to ~/.dsh/profiles/web/cordis.patch.yml):
 #    - insert:
