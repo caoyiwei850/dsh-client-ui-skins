@@ -1,4 +1,4 @@
-# DSH 皮肤插件 · dsh-client-ui-skins v0.1.9
+# DSH 皮肤插件 · dsh-client-ui-skins v0.1.10
 
 给 DeepSeek Harness (DSH) Web 界面换肤：4 套内置皮肤 + 自定义图片皮肤
 （图片作为整个界面的背景，配色自动跟随图片主色调）。
@@ -17,7 +17,7 @@
 
 | 文件 | 作用 |
 | --- | --- |
-| `dsh-client-ui-skins-0.1.9.tgz` | 插件安装包（npm tarball） |
+| `dsh-client-ui-skins-0.1.10.tgz` | 插件安装包（npm tarball） |
 | `install-dsh-skins.sh` | 一键安装脚本 |
 | `uninstall-dsh-skins.sh` | 一键卸载脚本 |
 
@@ -33,7 +33,7 @@ bash install-dsh-skins.sh
 ### 方式 B：手动
 ```bash
 # 1. 装包
-cd ~/.dsh/profiles/web && pnpm add -w ./dsh-client-ui-skins-0.1.9.tgz
+cd ~/.dsh/profiles/web && pnpm add -w ./dsh-client-ui-skins-0.1.10.tgz
 
 # 2. 注册（编辑 ~/.dsh/profiles/web/cordis.patch.yml，追加：）
 #    - insert:

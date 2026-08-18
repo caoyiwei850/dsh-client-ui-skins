@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.1.10] - 2026-08-18
+
+### Added
+- 动态壁纸：自定义皮肤支持选 MP4 / WebM 视频作为循环播放的动态背景。
+  - 取色：`processVideo` 把视频 seek 到首帧 → canvas 截帧 → 复用图片壁纸
+    的像素采样逻辑生成调色板，整套配色跟随视频画面。
+  - 播放：固定定位 `<video>`（`z-index:-2`，loop + muted + autoplay），
+    上叠 veil 遮罩保证文字可读。
+  - 持久化：调色板存 localStorage，视频 Blob 存 IndexedDB（不受
+    localStorage 5MB 限制）。
+  - 恢复：启动时从 IndexedDB 异步读 Blob → createObjectURL → 播放。
+  - 清理：切到其它皮肤时停视频、revokeObjectURL、删 IndexedDB 记录。
+  - 视频模式（`data-dsh-skin-bg=video`）镜像了图片模式全部的对比度补救
+    CSS 规则，选中行 / toast / 文件行 / 警告条等文字均保持可读。
+
 ## [0.1.9] - 2026-08-16
 
 ### Fixed
