@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.1.12] - 2026-08-27
+
+### Added
+- 自定义图片/视频皮肤下，设置→通用→皮肤面板新增两个透明度滑块：
+  - 背景遮罩（控制整个 page wash + 壁纸 veil 的不透明度，0-100）
+  - 输入框不透明度（控制 composer/登录框背景 alpha，0-100）
+  - 滑块实时生效，存 localStorage，刷新恢复；仅自定义皮肤激活时显示。
+- 助手正文磨砂底：浅色模式下正文深色文字压在照片高光区会被吃掉发灰，
+  给 `[data-chat-flow-kind=assistant-step]` 的 markdown 容器加一层轻薄
+  `backdrop-filter: blur` + 半透明背景，只覆盖正文不碰整体背景透明度；
+  深色模式用深色半透明底。
+
+### Changed
+- translucent 模式下辅助标签色（label-secondary/tertiary/caption/dimmed）
+  从半透明预合成改为固定不透明分级色，避免照片亮部让半透明标签糊掉。
+- 输入框背景从 `alphaOver(accent, 0.22, washBase)` 改为
+  `rgba(中性深色, ia)`，亮 accent（黄/青）下不再偏亮，文字对比度稳定。
+- Host 侧 `lib/index.js` 清空（皮肤是纯 localStorage 偏好，原 ui-skins
+  settings namespace 是死代码）；顺带去掉 `@deepseek-ai/dsh-settings` 和
+  `@deepseek-ai/schemastery` 两个 peerDep 和 lib/types 引用。
+- selected 行 on-accent 规则收窄到 `[role="treeitem"][aria-selected]`。
+
 ## [0.1.11] - 2026-08-20
 
 ### Fixed

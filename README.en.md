@@ -1,6 +1,6 @@
 # dsh-client-ui-skins
 
-A skin plugin for the DeepSeek Harness (DSH) Web UI: 4 built-in skins plus custom image skins — use any photo as the whole-interface background and let the palette follow its dominant colour.
+A skin plugin for the DeepSeek Harness (DSH) Web UI: 4 built-in skins plus custom image skins — use any photo as the whole-interface background and let the palette follow its dominant colour. Custom media skins include adjustable background veil and genuinely transparent input wells.
 
 Pure client plugin; no DSH source is touched. Uninstalling fully restores the native look.
 
@@ -11,7 +11,7 @@ Pure client plugin; no DSH source is touched. Uninstalling fully restores the na
 - **Appearance-aware**: follows dark / light / system switching
 - **Accent-linked accents**: session selection (pure accent), functional borders, code highlights and input wells all follow the image's dominant hue
 - **Readability guaranteed**: bright accents auto-switch to dark text, dark accents to light text
-- **Persistent**: skin choice and custom image stay in localStorage across reloads
+- **Persistent**: skin choice, custom image, and opacity controls stay in localStorage across reloads
 - **Default option**: one click back to the native appearance
 
 ## Install
@@ -28,7 +28,7 @@ bash install-dsh-skins.sh
 
 ```bash
 # 1. install the package
-cd ~/.dsh/profiles/web && pnpm add -w <path-to>/dsh-client-ui-skins-0.1.11.tgz
+cd ~/.dsh/profiles/web && pnpm add -w <path-to>/dsh-client-ui-skins-0.1.12.tgz
 
 # 2. register (append to ~/.dsh/profiles/web/cordis.patch.yml):
 #    - insert:

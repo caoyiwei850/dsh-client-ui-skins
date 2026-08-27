@@ -4,3 +4,4 @@ lib/*.tgz
 *.tgz
 .DS_Store
 .playwright-cli/
+.mimosa/
