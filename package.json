@@ -1,6 +1,6 @@
 {
   "name": "dsh-client-ui-skins",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "DSH skin plugin: built-in skins + custom image skins, pure client plugin (no source patch)",
   "type": "module",
   "main": "lib/index.js",
