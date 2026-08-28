@@ -1,6 +1,6 @@
 {
   "name": "dsh-client-ui-skins",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "DSH skin plugin: built-in skins + custom image skins, pure client plugin (no source patch)",
   "type": "module",
   "main": "lib/index.js",
@@ -30,6 +30,9 @@
         "@deepseek-ai/dsh-client-ui-settings",
         "@deepseek-ai/dsh-client-ui-slots",
         "@deepseek-ai/dsh-client-ui-theme"
+      ],
+      "external": [
+        "@deepseek-ai/dsh-client-runtime/client"
       ],
       "platform": "web",
       "immediately": true

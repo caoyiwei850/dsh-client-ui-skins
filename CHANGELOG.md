@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.14] - 2026-08-28
+
+### Fixed
+- 插件加载顺序修复（不限于 Windows）：在 `dsh.client.external` 声明
+  `@deepseek-ai/dsh-client-runtime/client`，让运行时工厂先到达，再执行皮肤包的
+  同步 `require()`，避免在运行时就绪前加载导致报错。
+
 ## [0.1.13] - 2026-08-27
 
 ### Added
