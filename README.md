@@ -1,4 +1,4 @@
-# DSH 皮肤插件 · dsh-client-ui-skins v0.1.13
+# DSH 皮肤插件 · dsh-client-ui-skins v0.1.16
 
 给 DeepSeek Harness (DSH) Web 界面换肤：4 套内置皮肤 + 自定义图片/视频皮肤。
 自定义皮肤把整张图片（PNG / JPG / WebP）或视频（MP4 / WebM）作为界面背景，
