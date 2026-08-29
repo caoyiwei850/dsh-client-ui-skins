@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.15] - 2026-08-29
+
+### Fixed
+- alpha 平台兼容：`require()` 双版本回退——先尝试
+  `@deepseek-ai/dsh-client-runtime/client`（DSH ≤ 0.1.1），失败则回退
+  `@deepseek-ai/dsh-client-store`（DSH alpha，运行时拆分为细粒度包后
+  runtime 已不在模块表）。两平台 `defineStore` 契约一致，行为相同；
+  `dsh-client-store` 声明为 optional peerDependency（不在 npm，平台提供）。
+
 ## [0.1.14] - 2026-08-28
 
 ### Fixed
