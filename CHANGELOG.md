@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.16] - 2026-08-29
+
+### Fixed
+- 硬编码 CSS-module 哈希选择器全部改前缀通配（rc.6/rc.8/alpha 三代前端
+  类名均为 `_模块名_哈希` 风格，旧 `哈希_模块名` 写法匹配不到任何元素）：
+  - 正文加强磨砂底：`._markdown_1r4m5_5` → `[class*='_markdown_']`
+  - 选中行背景：`.YDXeBa_sessionRow/YDXeBa_projectRow` → 并入
+    `[role="treeitem"][aria-selected="true"]`（品牌色背景+可读文字）
+  - 产物文件行文字：`[class*="P4kPIW_file"]` → `[class*='_file']`
+  - 警告条文字：`[class*="uV2eYG_notice"]` → `[class*='_warning']`
+    （alpha 前端该类已从 notice 更名为 warning）
+
 ## [0.1.15] - 2026-08-29
 
 ### Fixed
