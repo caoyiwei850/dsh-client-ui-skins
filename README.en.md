@@ -42,7 +42,7 @@ cd ~/.dsh/profiles/web && pnpm add -w <path-to>/dsh-client-ui-skins-0.1.13.tgz
 launchctl kickstart -k gui/$(id -u)/com.deepseek.dsh.web
 ```
 
-Then refresh `http://127.0.0.1:3080` → **Settings → General → Skins**.
+Then refresh `http://127.0.0.1:3080` → **Settings → Skins**.
 
 ## Uninstall
 
@@ -52,7 +52,7 @@ bash uninstall-dsh-skins.sh
 
 ## Usage
 
-1. Open **Settings → General → Skins**
+1. Open **Settings → Skins**
 2. Click any built-in skin card — applies instantly
 3. Click **Custom (image/video)** and pick a photo or video — the whole palette follows it
 4. With a custom skin active, tune the **Background veil** / **Input opacity** sliders and toggle **Emphasize body text** live
